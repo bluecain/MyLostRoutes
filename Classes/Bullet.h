@@ -17,13 +17,13 @@
 
 class Bullet : public cocos2d::Sprite
 {
-    CC_SYNTHESIZE(cocos2d::Vec2, velocity, Velocity);
+    CC_SYNTHESIZE(cocos2d::Vec2, velocity, Velocity);  //子弹发射的速度
     
 public :
 
     void shootBulletFromFighter(Fighter* fighter);
     
-    virtual void update(float dt);
+    virtual void update(float dt);  //update函数，默认每秒一次
     static Bullet* createWithSpriteFrameName(const char* spriteFrameName);
 };
 

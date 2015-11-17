@@ -52,7 +52,7 @@ public:
 	virtual void onEnterTransitionDidFinish();
 	virtual void onExit();
 
-	//发射炮弹.
+	//发射一枚炮弹.
 	void shootBullet(float dt);
 
 	//初始化背景.
